@@ -16,6 +16,8 @@ Following are the topics covered:
 11. Loading and error handling using GraphQL provided configuration
 
 
-#To install packages, execute the command `npm run install-dep`. This will install all the required dependencies.
+## Install Packages
+Execute `npm run install-dep` to install dependencies for entire application.
 
-#To start the application, clone the repository and execute the command `npm run dev`. That should start both, the server and client.
+## Starting the application
+Clone the repository and execute the command `npm run dev`. That should start both, the server and client.
