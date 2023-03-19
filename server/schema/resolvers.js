@@ -27,7 +27,8 @@ const resolvers = {
       return userList.find((user) => user.id === Number(id));
     },
     deleteUser: (parent, args) => {
-      userList.filter((user) => user.id !== Number(args.id));
+      let user = userList.filter((user) => user.id === Number(args.id));
+      userList.splice(userList.indexOf(user, 1));
       return null;
     },
   },
