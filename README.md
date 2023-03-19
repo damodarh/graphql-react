@@ -15,4 +15,7 @@ Following are the topics covered:
 10. useLazyQuery hook
 11. Loading and error handling using GraphQL provided configuration
 
+
+#To install packages, execute the command npm run install-dep. This should install dependencies all the required dependencies.
+
 #To start the application, clone the repository and execute the command npm run dev. That should start both, the server and client.
