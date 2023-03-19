@@ -19,7 +19,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    users: [User!]!
+    users: UserResult
     user(id: ID!): User!
     movies: [Movie!]!
     movie(name: String!): Movie!
@@ -50,6 +50,16 @@ const typeDefs = gql`
     JAPANESE
     GERMAN
   }
+
+  type UserSuccess {
+    users: [User!]!
+  }
+
+  type UserError {
+    message: String!
+  }
+
+  union UserResult = UserSuccess | UserError
 `;
 
 module.exports = { typeDefs };
