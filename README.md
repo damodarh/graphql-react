@@ -14,3 +14,5 @@ Following are the topics covered:
 9. useMutation hook
 10. useLazyQuery hook
 11. Loading and error handling using GraphQL provided configuration
+
+#To start the application, clone the repository and execute the command npm run dev. That should start both, the server and client.
