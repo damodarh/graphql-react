@@ -4,11 +4,18 @@ import { useQuery, useLazyQuery, gql, useMutation } from '@apollo/client';
 const QUERY_ALL_USERS = gql`
   query getAllUsers {
     users {
-      id
-      name
-      age
-      nationality
-      username
+      ... on UserSuccess {
+        users {
+          id
+          name
+          age
+          nationality
+          username
+        }
+      }
+      ... on UserError {
+        message
+      }
     }
   }
 `;
@@ -126,7 +133,7 @@ const DisplayData = (props) => {
         </button>
       </div>
       {data &&
-        data.users.map((user) => {
+        data.users.users.map((user) => {
           return (
             <div>
               <h1>Name: {user.name}</h1>
