@@ -1,0 +1,22 @@
+{
+  "name": "graphql-react",
+  "version": "1.0.0",
+  "description": "graphql-react project to demonstrate basic working of GraphQL",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others \"npm run start --prefix server\" \"npm run start --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damodarh/graphql-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damodarh/graphql-react/issues"
+  },
+  "homepage": "https://github.com/damodarh/graphql-react#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
